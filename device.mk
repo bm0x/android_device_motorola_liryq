@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
     pstore_annotate.sh \
 
 PRODUCT_PACKAGES += \
-    fstab.enableswap \
+    fstab.mt6893 \
     apanic.rc \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
@@ -99,7 +99,7 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.enableswap
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6893
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
